@@ -1,0 +1,66 @@
+* {
+  font-family: 'Roboto Condensed';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pomodoro-dark: #ba4949;
+  --pomodoro-light: #c15c5c;
+  --pomodoro-highlight: #a44e4e;
+
+  --shortbreak-dark: #ba4949;
+  --shortbreak-light: #c15c5c;
+  --shortbreak-highlight: #a44e4e;
+
+  --longbreak-dark: #ba4949;
+  --longbreak-light: #c15c5c;
+  --longbreak-highlight: #a44e4e;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--pomodoro-dark);
+  color: #fff;
+}
+
+.container {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 40vh;
+  background-color: var(--pomodoro-light);
+  gap: 2rem;
+}
+
+.topbar button {
+  color: #fff;
+  background-color: var(--pomodoro-light);
+  border: 0;
+  margin: 0 10px;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.topbar .active {
+  background-color: var(--pomodoro-highlight);
+  color: #fff;
+}
+
+.timer {
+  font-size: 8rem;
+}
+
+.start {
+  padding: 10px 40px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+}
