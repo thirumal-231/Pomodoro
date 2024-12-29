@@ -10,13 +10,13 @@
   --pomodoro-light: #c15c5c;
   --pomodoro-highlight: #a44e4e;
 
-  --shortbreak-dark: #ba4949;
-  --shortbreak-light: #c15c5c;
-  --shortbreak-highlight: #a44e4e;
+  --shortbreak-dark: #48a96d;
+  --shortbreak-light: #67c28a;
+  --shortbreak-highlight: #548a68;
 
-  --longbreak-dark: #ba4949;
-  --longbreak-light: #c15c5c;
-  --longbreak-highlight: #a44e4e;
+  --longbreak-dark: #38858a;
+  --longbreak-light: #4c9196;
+  --longbreak-highlight: #417b80;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--pomodoro-dark);
+  background-color: var(--longbreak-dark);
   color: #fff;
 }
 
@@ -36,26 +36,34 @@ body {
   flex-direction: column;
   width: 500px;
   height: 40vh;
-  background-color: var(--pomodoro-light);
+  background-color: var(--longbreak-light);
   gap: 2rem;
 }
 
-.topbar button {
+.btn {
   color: #fff;
-  background-color: var(--pomodoro-light);
+  /* background-color: var(--longbreak-light); */
   border: 0;
   margin: 0 10px;
   font-size: 20px;
   padding: 5px 10px;
   border-radius: 5px;
 }
+
 .topbar .active {
-  background-color: var(--pomodoro-highlight);
-  color: #fff;
+  background-color: var(--longbreak-highlight);
 }
 
 .timer {
   font-size: 8rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  cursor: default;
 }
 
 .start {
